@@ -1,6 +1,4 @@
-package _20200613;
-
-import javax.sound.midi.Soundbank;
+package _2020._20200613;
 
 /**
  * @author <a href="http://www.chenforcode.cn">PKUCoder</a>
