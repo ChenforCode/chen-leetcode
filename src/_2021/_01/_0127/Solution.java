@@ -9,6 +9,7 @@ import java.util.Arrays;
  * 因为没有权重，所以按照顺序遍历，依次加边，然后判断联通，如果两点已经联通，那么下次连接
  * 这两点的边就是多余的，不再加边，记录可删除数字+1。先加公共边，然后加alice，加bob。
  * 二者分别有一个并查集来判断任意两点是否联通。最后各自的并查集数目为1代表合并完成，可连通。
+ * 并查集可以看成是几个联通点的集合，他们几个之间类似树的关系，有一个祖先节点。
  */
 public class Solution {
     public static int maxNumEdgesToRemove(int n, int[][] edges) {
