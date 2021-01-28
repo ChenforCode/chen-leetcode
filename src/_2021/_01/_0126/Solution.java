@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @author <a href="http://blog.chenforcode.cn">PKUCoder</a>
  * @date 2021/1/26 9:52 上午
- * @description 多米诺骨牌
+ * @description 1128.等价多米诺骨牌对的数量
  * 给出n个二元组，两个组，相同或者相反代表是相同的一组，查一共有多少个相同组。
  * 例如 (1,2)(2,1)(3,4)(4,5)只有前两个是相同的一组，输出为1
  * 解法：对于12，21这种我们统一看成12，并将12看成key，value看成有多少个组是12，然后对value进行

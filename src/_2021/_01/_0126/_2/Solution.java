@@ -3,7 +3,7 @@ package _2021._01._0126._2;
 /**
  * @author <a href="http://blog.chenforcode.cn">PKUCoder</a>
  * @date 2021/1/26 11:16 上午
- * @description 汉明距离
+ * @description 461.汉明距离
  */
 public class Solution {
     public static int hammingDistance(int x, int y) {
