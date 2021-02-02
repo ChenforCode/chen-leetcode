@@ -3,7 +3,11 @@ package _2021._02._0202;
 /**
  * @author <a href="http://blog.chenforcode.cn">PKUCoder</a>
  * @date 2021/2/2 5:13 下午
- * @description 424. 替换后的最长重复字符
+ * @description 424. 替换后的最长重复字符。
+ * 利用一个左右指针，每次都尝试对右指针右移一次，然后判断当前窗口内当前最多的字符+k
+ * 是否会小于窗口大小（如果小于了，说明窗口太大，k不够用），此时需要缩小窗口，也就是
+ * 将左指针右移，然后就又可以继续开始移动右指针。然后需要利用一个频率数组记录当前窗口
+ * 内所有字符的频率。在整个过程中记录整个窗口的最大值。
  */
 public class Solution {
     public static int characterReplacement(String s, int k) {
