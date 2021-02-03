@@ -35,5 +35,4 @@ public class Solution {
         String s = "abcabcbb";
         System.out.println(lengthOfLongestSubstring(s));
     }
-
 }
