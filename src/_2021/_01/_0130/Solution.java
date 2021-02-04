@@ -1,6 +1,5 @@
 package _2021._01._0130;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +7,11 @@ import java.util.List;
 /**
  * @author <a href="http://blog.chenforcode.cn">PKUCoder</a>
  * @date 2021/2/3 3:28 下午
- * @description 778. 水位上升的泳池中游泳
+ * @description 778. 水位上升的泳池中游泳。
+ * 这道题的思路和29号的十分相似，这个题是求，从0-0到n-1~n-1两个点连通路径上的水位最大值，
+ * 因为只有过了这最大水位的时间，才能漫过这个位置，才能连通两个点。因此整体思路同样是先构造
+ * 边，边的权值取两点的最大值，因为只有这样才能连通。然后按照克鲁斯卡尔的顺序，按最小权重
+ * 加边，用并查集判两点连通，等到连通的时候，该边的权重就是最后的结果。
  */
 public class Solution {
     static class edge {
