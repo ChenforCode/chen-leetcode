@@ -40,7 +40,6 @@ package leetcode.editor.cn;
 class FlippingAnImage {
     public static void main(String[] args) {
         Solution solution = new FlippingAnImage().new Solution();
-        
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
