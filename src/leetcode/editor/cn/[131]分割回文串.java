@@ -31,7 +31,18 @@ package leetcode.editor.cn;
 // Related Topics 深度优先搜索 动态规划 回溯算法 
 // 👍 592 👎 0
 
-import com.sun.jmx.remote.internal.ArrayQueue;
+/**
+ def backtrack(未探索区域, res, path):
+    if 未探索区域满足结束条件:
+        res.add(path) # 深度拷贝
+        return
+    for 选择 in 未探索区域当前可能的选择:
+        if 当前选择符合要求:
+            path.add(当前选择)
+            backtrack(新的未探索区域, res, path)
+            path.pop()
+
+ **/
 
 import java.util.*;
 

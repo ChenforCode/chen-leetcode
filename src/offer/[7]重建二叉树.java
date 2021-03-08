@@ -54,10 +54,11 @@ class BuildTree {
             }
         }
 
-        TreeNode root = new TreeNode(0);
-        root.left = buildTree(Arrays.copyOfRange(preorder, ));
-        root.right = buildTree();
-        return root;
+//        TreeNode root = new TreeNode(0);
+//        root.left = buildTree(Arrays.copyOfRange(preorder, ));
+//        root.right = buildTree();
+//        return root;
+        return null;
     }
 
 }
