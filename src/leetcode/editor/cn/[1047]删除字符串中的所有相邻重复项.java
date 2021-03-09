@@ -30,6 +30,7 @@ package leetcode.editor.cn;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.concurrent.atomic.AtomicInteger;
 
 class RemoveAllAdjacentDuplicatesInString {
     public static void main(String[] args) {
@@ -56,6 +57,7 @@ class RemoveAllAdjacentDuplicatesInString {
                 str.append(stack.getFirst());
                 stack.removeFirst();
             }
+            new AtomicInteger(5);
             return new String(str);
         }
     }
