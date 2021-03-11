@@ -77,14 +77,26 @@ class PalindromePartitioningIi {
                 dp[i] = i;
             }
             //dp[0]是不可能变的，从dp1开始计算。从0也可以开始算，只不过会被直接跳过
-            for (int i = 0; i < len; i++) {
+            for (int i = 1; i < len; i++) {
                 //如果这个串是一个回文，那就不用切了
                 if (isPali[0][i] == 1) {
                     dp[i] = 0;
+                    continue;
                 }
+                int mina = Integer.MAX_VALUE;
                 for (int j = 0; j < i; j++) {
                     if(isPali[j + 1][i] == 1) {
-                        dp[i] = Math.min(dp[i], dp[j] + 1);
+                        //首先明确，dp[i]在这个循环里是不会被用到的，所以它的值实时更新
+                        //也不会影响其他的dp。
+                        //这个地方的意思是，用每个算出来的j来更新dp[i]
+//                        dp[i] = Math.min(dp[i], dp[j] + 1);
+                        //这个地方的意思是求出所有j的一个最小，然后更新dp[i];
+                        mina = Math.min(mina, dp[j] + 1);
+                        if (j == i - 1) {
+                            if (mina < dp[i]) {
+                                dp[i] = mina;
+                            }
+                        }
                     }
                 }
             }
