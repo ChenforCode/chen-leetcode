@@ -52,30 +52,45 @@ package leetcode.editor.cn;
 
 class DesignHashmap {
     public static void main(String[] args) {
-        Solution solution = new DesignHashmap().new Solution(); 
+
+//        Solution solution = new DesignHashmap().new Solution();
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class MyHashMap {
 
+    private int[][] hash;
     /** Initialize your data structure here. */
     public MyHashMap() {
-
+        hash = new int[1000][1001];
+        for(int i = 0; i < 1000; i++) {
+            for (int j = 0; j < 1001; j++) {
+                hash[i][j] = -1;
+            }
+        }
     }
-    
+
+    public int getHash(int key) {
+        return key % 1000;
+    }
+
+    public int getKey(int key) {
+        return key / 1000;
+    }
+
     /** value will always be non-negative. */
     public void put(int key, int value) {
-
+        hash[getHash(key)][getKey(key)] = value;
     }
-    
+
     /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
     public int get(int key) {
-
+        return hash[getHash(key)][getKey(key)];
     }
-    
+
     /** Removes the mapping of the specified value key if this map contains a mapping for the key */
     public void remove(int key) {
-
+        hash[getHash(key)][getKey(key)] = -1;
     }
 }
 
