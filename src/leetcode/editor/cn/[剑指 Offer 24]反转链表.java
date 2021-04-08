@@ -47,14 +47,21 @@ class FanZhuanLianBiaoLcof {
 
     class Solution {
         public ListNode reverseList(ListNode head) {
+            //当前节点
             ListNode cur = head;
+            //前面的节点，最后要返回
             ListNode pre = null;
             while (cur != null) {
+                //先把后边的节点保存起来
                 ListNode next = cur.next;
+                //然后cur的指向反向，指向pre
                 cur.next = pre;
+                //以上两步就完成了两个节点的反转，这个时候需要后移pre和cur，pre指向cur的位置
                 pre = cur;
+                //cur需要指向原来cur的下一个位置，也就是next，已经提前保存了
                 cur = next;
             }
+            //这一步cur为null，走到结尾，pre就是null的前一个，也就是原链表的最后一个节点，现在是头节点了。
             return pre;
         }
     }
