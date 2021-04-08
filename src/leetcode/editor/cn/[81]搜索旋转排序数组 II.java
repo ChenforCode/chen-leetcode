@@ -106,7 +106,8 @@ class SearchInRotatedSortedArrayIi {
                     //如果mid比right小，那么最小值应该在左侧，并且mid有可能是最小值。
                     right = mid;
                 } else if (nums[mid] == nums[right]) {
-                    //如果二者相等，仅将右值缩小，减小搜索范围。
+                    //如果二者相等，仅将右值缩小，减小搜索范围。判断不了0在左还是右
+                    //1 0 1 1 1 和 1 1 1 0 1
                     right--;
                 }
             }
