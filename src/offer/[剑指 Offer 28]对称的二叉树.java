@@ -1,4 +1,4 @@
-package leetcode.editor.cn;
+package offer;
 
 //请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。 
 //
@@ -101,6 +101,9 @@ class DuiChengDeErChaShuLcof {
             if (left == null || right == null || left.val != right.val) {
                 return false;
             }
+            //走到这里当前已经是符合的了，但是整体符不符合还要接着看下边的搜索过程
+            //因为必须是这两个点符合，并且他们的子点也符合才能返回true，所以这里不能
+            //直接判断二点符合就返回true，所以最终的结果交给了下边
             //递归判定
             return search(left.left, right.right) && search(left.right, right.left);
         }
