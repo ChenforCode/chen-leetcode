@@ -53,7 +53,8 @@ package offer;
 
 class ChouShuLcof {
     public static void main(String[] args) {
-        Solution solution = new ChouShuLcof().new Solution(); 
+        Solution solution = new ChouShuLcof().new Solution();
+        String a = "aaa";
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
