@@ -36,10 +36,8 @@ package offer;
  *
  **/
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+import java.util.stream.Collectors;
 
 class CongShangDaoXiaDaYinErChaShuLcof {
     public static void main(String[] args) {
