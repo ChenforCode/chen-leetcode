@@ -73,5 +73,9 @@
 [剑指 Offer 32 - I]从上到下打印二叉树.java  
 [剑指 Offer 32 - II]从上到下打印二叉树 II.java  
 [剑指 Offer 32 - III]从上到下打印二叉树 III.java  
+[剑指 Offer 35]复杂链表的复制.java  
+[剑指 Offer 36]二叉搜索树与双向链表.java  
+[剑指 Offer 40]最小的k个数.java  
+[剑指 Offer 42]连续子数组的最大和.java  
 [剑指 Offer 49]丑数.java  
 [剑指 Offer 57]和为s的两个数字.java  
