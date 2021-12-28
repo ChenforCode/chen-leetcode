@@ -20,6 +20,7 @@
 [304]二维区域和检索 - 矩阵不可变.java  
 [331]验证二叉树的前序序列化.java  
 [338]比特位计数.java  
+[472]连接词.java  
 [528]按权重随机选择.java  
 [581]最短无序连续子数组.java  
 [705]设计哈希集合.java  
@@ -73,8 +74,11 @@
 [剑指 Offer 32 - I]从上到下打印二叉树.java  
 [剑指 Offer 32 - II]从上到下打印二叉树 II.java  
 [剑指 Offer 32 - III]从上到下打印二叉树 III.java  
+[剑指 Offer 33]二叉搜索树的后序遍历序列.java  
 [剑指 Offer 35]复杂链表的复制.java  
-[剑指 Offer 36]二叉搜索树与双向链表.java  
+[剑指 Offer 36]二叉搜索树与双向链表.java
+[剑指 Offer 38]字符串的排列.java  
+[剑指 Offer 39]数组中出现次数超过一半的数字.java  
 [剑指 Offer 40]最小的k个数.java  
 [剑指 Offer 42]连续子数组的最大和.java  
 [剑指 Offer 49]丑数.java  
