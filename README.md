@@ -74,12 +74,17 @@
 [剑指 Offer 32 - I]从上到下打印二叉树.java  
 [剑指 Offer 32 - II]从上到下打印二叉树 II.java  
 [剑指 Offer 32 - III]从上到下打印二叉树 III.java  
-[剑指 Offer 33]二叉搜索树的后序遍历序列.java  
+[剑指 Offer 33]二叉搜索树的后序遍历序列.java
+[剑指 Offer 34]二叉树中和为某一值的路径.java  
 [剑指 Offer 35]复杂链表的复制.java  
 [剑指 Offer 36]二叉搜索树与双向链表.java
 [剑指 Offer 38]字符串的排列.java  
 [剑指 Offer 39]数组中出现次数超过一半的数字.java  
 [剑指 Offer 40]最小的k个数.java  
 [剑指 Offer 42]连续子数组的最大和.java  
+[剑指 Offer 45]把数组排成最小的数.java  
 [剑指 Offer 49]丑数.java  
+[剑指 Offer 50]第一个只出现一次的字符.java  
+[剑指 Offer 55 - I]二叉树的深度.java  
+[剑指 Offer 57 - II]和为s的连续正数序列.java  
 [剑指 Offer 57]和为s的两个数字.java  

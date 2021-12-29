@@ -28,15 +28,25 @@ package leetcode.editor.cn;
 
 class HeWeiSdeLiangGeShuZiLcof {
     public static void main(String[] args) {
-        Solution solution = new HeWeiSdeLiangGeShuZiLcof().new Solution(); 
+        Solution solution = new HeWeiSdeLiangGeShuZiLcof().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        return nums;
+    class Solution {
+        public int[] twoSum(int[] nums, int target) {
+            int i = 0, j = nums.length - 1;
+            while (i < j) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{nums[i], nums[j]};
+                } else if (nums[i] + nums[j] < target) {
+                    i++;
+                } else if (nums[i] + nums[j] > target) {
+                    j--;
+                }
+            }
+            return null;
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
