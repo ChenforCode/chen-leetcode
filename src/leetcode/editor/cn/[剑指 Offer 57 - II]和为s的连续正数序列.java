@@ -28,18 +28,53 @@ package leetcode.editor.cn;
 //
 // 
 // Related Topics 数学 双指针 枚举 👍 354 👎 0
+/**
+ *
+ * 滑动窗口，i j代表左右边界，区间内的数字是从[i,j-1]，然后大于target的时候缩小窗口i++，小于target的时候
+ * 扩大窗口j++
+ *
+ * 至于为什么是[i,j-1]而不包括j呢。。举个例子，当前i，j都是初始状态都是1，然后开始扩大窗口，判断sum=0 < target
+ * 然后sum+=j j++。我们可以看出来此时窗口变成了[1-2]，但是sum = 1，就是并没有加上去右区间。
+ * 因此我们定义此题的滑动窗口是一个左闭右开区间
+ *
+ * 如果找到了一个序列，左/右边界向右移动即可。要不然会一直死在这个循环里，会一直进入(sum=target)的分支里
+ */
+
+import java.util.ArrayList;
+import java.util.List;
 
 class HeWeiSdeLianXuZhengShuXuLieLcof {
     public static void main(String[] args) {
-        Solution solution = new HeWeiSdeLianXuZhengShuXuLieLcof().new Solution(); 
+        Solution solution = new HeWeiSdeLianXuZhengShuXuLieLcof().new Solution();
+        solution.findContinuousSequence(9);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[][] findContinuousSequence(int target) {
-
+    class Solution {
+        public int[][] findContinuousSequence(int target) {
+            int sum = 0;
+            int i = 1, j = 1;
+            List<int[]> res = new ArrayList<>();
+            while (i <= (target + 1) / 2) {
+                if (sum < target) {
+                    sum += j;
+                    j++;
+                } else if (sum > target) {
+                    sum -= i;
+                    i++;
+                } else {
+                    int[] curRes = new int[j - i];
+                    for (int k = 0; k < (j - i); k++) {
+                        curRes[k] = k + i;
+                    }
+                    res.add(curRes);
+                    sum -= i;
+                    i++;
+                }
+            }
+            return res.toArray(new int[res.size()][]);
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
